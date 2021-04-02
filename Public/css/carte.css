@@ -1,0 +1,29 @@
+
+/* //////////////Page Carte ////////////// */
+
+
+.menu{
+    margin-top: 150px;
+    height: 320px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-title{
+    height:50px;
+    width:100%;
+    background-color: #EFA282;
+    position: absolute;
+  }
+  .carte h1{
+    font-family: "Tw Cen MT";
+    color: #CE5959;
+    margin-bottom: 50px;
+  }
+  .carte h4{
+    color: #EFA282;
+  }
+  .carte img{
+    width:100%;
+  }

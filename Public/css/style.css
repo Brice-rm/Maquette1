@@ -14,10 +14,8 @@
 }
 
 html, body{
-  position: relative;
   font-family: "Roboto";
-  overflow-x: hidden;
-  overflow-y: overlay;
+  height: 100%;
 }
 
 *, ::before, ::after {
@@ -25,16 +23,12 @@ html, body{
   margin: 0;
   padding: 0;
 }
-
+/* 
 #page{
-  min-height:100vh!important; /* 1 */
-	display:flex; /* 2 */
-	flex-direction:column; /* 3 */
-}
-#content {
-	flex: grow 1!important; /* 4 */
-  
-}
+  min-height: 100%;
+  position: relative;  
+} */
+
 
 
 /* // NAV // */
@@ -58,7 +52,8 @@ html, body{
     overflow: hidden; /* Coupe ce qui dépasse de la div ( trop utile !) */
   }  
   img {   
-    width: 100vw;
+    max-width: 100%;
+    height: auto;
   }
 .rond{
     position: absolute;
@@ -99,333 +94,7 @@ html, body{
 
 
 
-/* // ABOUT // */
 
-.about{
-  height: 120px;
-  width: 100vw;
-  background-color: #EFA282;
-  margin: 50px 0 20px 0;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.about-p{
-  width:70%;
-  margin: 25px 0 0 30%;
-}
-.hr1{ 
-  width: 70%;
-  height: 0.01px;
-  background-color: white;
-}
-.titles{
-  margin: 0 0 0 10%;
-  position: absolute;
-  top: -28%;
-}
-.t1{
- font-family: "Great vibes";
- font-size: 40px;
- color: #CE5959;
-}
-.t2{
-  font-family: "Tw Cen MT";
-  font-size: 20px;
-  color: white;
-  position:absolute;
-  top: 50%;
-  left:45%;
-}
-.p-about{
-  font-family: "Roboto";
-  font-weight: lighter;
-  font-size:8px;
-  width: 70%;
-  height: 72px;
-  color: white;
-}
-.salade{
-  position: absolute;
-  height: 270px;
-  width: 270px;
-  top: -65%;
-  left: -100px;
-}
-
-@media screen and (max-width:350px) {
-  .hr1, .hr2 , .p-about{
-    width: 170px;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:1023px){
-  .about{
-    height: 245px;
-    margin: 100px 0 50px 0;
-  }
-  .about-p{
-    margin: 25px 0 0 40%;
-  }
-  .hr1{  
-   height: 0.01px;
-  }
-  .titles{
-    margin: 0 0 0 20%;
-    top: -23%;
-  }
-  .t1{
-   font-size: 70px;
-  }
-  .t2{
-    font-size: 35px;
-    top: 50%;
-    left:45%;
-  }
-  .p-about{
-    font-size:16px;
-    height: 146px;
-  }
-  .salade{
-    height: 550px;
-    width: 550px;
-    top: -68%;
-    left: -200px;
-  }
-}
-@media screen and (min-width:1024px){
-  .about{
-    height: 400px;
-    margin: 100px 0 50px 0;
-
-  }
-  .about-p{
-    margin: 25px 0 0 40%;
-    
-  }
-  .hr1{  
-   height: 0.01px;
-
-  }
-  .titles{
-    margin: 0 0 0 20%;
-    top: -21%;
-  }
-  .t1{
-   font-size: 100px;
-  }
-  .t2{
-
-    font-size: 50px;
-    top: 53%;
-    left:45%;
-  }
-  .p-about{
-    font-size:25px;
-    height: 246px;
-    width:50vw;
-  }
-  .salade{
-    height: 870px;
-    width: 870px;
-    top: -63%;
-    left: -300px;
-  }
-}
-
-/* // ENVIRONNEMENT // */
-.hr2{
-  width:50%;
-  background-color: #EFA282;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-.basilic1{
-  
-  width:140px;
-  height:145px;
-  transform: rotate(-224deg) scaleY(-1);
-  position: absolute;
-  z-index: 6;
-  right: -23px;
-  top:280px;
-}
-
-.basilic2{
-  width:140px;
-  height:145px;
-  transform: rotate(-43deg);
-  position: absolute;
-  z-index: 3;
-  left:-45px;
-  top: 635px;
-}
-.dessert{
-  width:220px;
-  height: auto;
-  position: absolute;
-  z-index: 7;
-  top: 650px;
-  right: -100px;
-}
-@media screen and (min-width:768px) and (max-width:1023px){
-  .hr2{
-    width:432px;
-    margin-bottom: 30px;
-  }
-
-  .basilic1{
-    width:273px;
-    height:283px;
-    right: -50px;
-    top:480px;
-  }
-  .basilic2{
-    
-    width:273px;
-    height:283px;
-    left:-100px;
-    top: 800px;
-  }
-  .dessert{
-    width:400px;
-    height: auto;
-    top: 850px;
-    right: -170px;
-  }
-}
-@media screen and (min-width:1024px){
-  .hr2{
-    width:50%;
-    margin-bottom: 30px;
-  }
-
-  .basilic1{
-    width:343px;
-    height:364px;
-    right: -50px;
-    top:880px;
-  }
-  .basilic2{
-    
-    width:343px;
-    height:364px;
-    left:-100px;
-    top: 1275px;
-  }
-  .dessert{
-    width:600px;
-    height: auto;
-    top: 1380px;
-    right: -250px;
-  }
-}
-/* // GALERIE // */
-
-.galerie{
-  flex-direction:column;
-  flex-wrap: wrap;
-}
-
-.grp-1{
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.plat1{
-  width:145px;
-  height:145px;
-  margin: 7px;
-  overflow: hidden;
-}
-.plat1 img{
-  position: relative;
-  z-index: 5;
-  width:100%;
-  height: auto;
-}
-
-.plat2{
-  width:302px;
-  height:145px;
-  margin: 7px;
-  overflow: hidden;
-}
-.plat2 img{
-  position: relative;
-  z-index: 4;
-  width:100%;
-  height: auto;
-}
-@media screen and (min-width:768px) and (max-width:1024px){
-  .galerie{
-    flex-direction:row;
-    flex-wrap: nowrap;
-  }
-  
-  .grp-1{
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  
-  .plat1{
-    width:214px;
-    height:214px;
-    margin: 7px;
-    overflow: hidden;
-  }
-  .plat1 img{
-    width:100%;
-    height: auto;
-  }
-  
-  .plat2{
-    width:214px;
-    height:214px;
-    margin: 7px;
-    overflow: hidden;
-  }
-  .plat2 img{
-    width:100%;
-    height: auto;
-  }
-}
-@media screen and (min-width:1024px){
-  .galerie{
-    flex-direction:row;
-    flex-wrap: nowrap;
-  }
-  
-  .grp-1{
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  
-  .plat1{
-    width:300px;
-    height:300px;
-    margin: 7px;
-    overflow: hidden;
-  }
-  .plat1 img{
-    width:100%;
-    height: auto;
-  }
-  
-  .plat2{
-    width:300px;
-    height:300px;
-    margin: 7px;
-    overflow: hidden;
-  }
-  .plat2 img{
-    width:100%;
-    height: auto;
-  }
-}
 /* // FOOTER // */
 
 footer{
@@ -433,8 +102,9 @@ footer{
   height:83px;
   width: 100%;
   font-size:7px;
-  position: absolute;
-  bottom: 0!important;
+  margin-top: -5%;
+  position: relative;
+  bottom: 0!important;left: 0;
   background-color:#CE5959;
   color:white;
   display: flex;
@@ -462,37 +132,3 @@ ul li{
 }
 
 
-
-
-
-
-
-
-/* //////////////Page Carte ////////////// */
-
-
-.menu{
-  margin-top: 150px;
-  height: 320px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.cart-title{
-  height:50px;
-  width:100%;
-  background-color: #EFA282;
-  position: absolute;
-}
-.carte h1{
-  font-family: "Tw Cen MT";
-  color: #CE5959;
-  margin-bottom: 50px;
-}
-.carte h4{
-  color: #EFA282;
-}
-.carte img{
-  width:100%;
-}
