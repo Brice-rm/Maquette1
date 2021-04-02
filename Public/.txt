@@ -1,0 +1,3 @@
+Red : #CE5959
+
+Saumon: #EFA282
