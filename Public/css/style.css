@@ -162,18 +162,29 @@ footer{
   color:white;
   display: flex;
   align-items: center;
+  padding-left: 5%;
   
-  
+}
+ul{
+  width: 100%;
 }
 ul li{
   list-style: none;
+  text-align:start
 }
 ul i{
-  font-family: 'Roboto';  
+  font-family: 'Roboto';
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
 }
-.fab::before{
+
+/* .fab::before{
   padding-right: 10px;
-}
+} */
+
+
 @media screen and (min-width:768px) and (max-width:1024px){
 
   footer{
@@ -183,6 +194,10 @@ ul i{
     font-size:10px;
     padding-left:8%;
   }
+  ul i{
+    font-size: 25px;
+  }
+
 }
 @media screen and (min-width:1024px){
   footer{
@@ -192,10 +207,15 @@ ul i{
     font-size:20px;
     padding-left:8%;
   }
-
-  .fab::before{
-    padding-right: 15px;
+  ul i{
+    font-size: 35px;
+    display: flex;
+    justify-content: start;
   }
+  ul{
+    padding-left:10%
+  }
+
 }
 
 
