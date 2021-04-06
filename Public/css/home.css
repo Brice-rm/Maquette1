@@ -173,7 +173,7 @@
     height: auto;
     position: absolute;
     z-index: 7;
-    top: 230px;
+    top: 270px;
     right: -100px;
   }
   @media screen and (min-width:768px) and (max-width:1023px){
@@ -211,7 +211,7 @@
     .hr2{
       width:50%;
       margin-bottom: 30px;
-   
+      margin-top: 30px;
     }
   
     .basilic1{
@@ -254,7 +254,7 @@
   .plat1{
     width:145px;
     height:145px;
-    margin: 7px;
+    margin: 5px;
     
   }
   .plat1 img{
@@ -288,25 +288,16 @@
       flex-wrap: nowrap;
     }
     
-    .plat1{
+    .plat1, .plat2{
       width:214px;
       height:214px;
       margin: 7px;
     }
-    .plat1 img{
+    .plat1 img, .plat2 img{
       width:100%;
       height: auto;
     }
-    
-    .plat2{
-      width:214px;
-      height:214px;
-      margin: 7px;
-    }
-    .plat2 img{
-      width:100%;
-      height: auto;
-    }
+
   }
   @media screen and (min-width:1024px){
     .galerie{
@@ -320,22 +311,13 @@
       flex-wrap: nowrap;
     }
     
-    .plat1{
+    .plat1,.plat2{
       width:300px;
       height:300px;
       margin: 7px;
-    }
-    .plat1 img{
-      width:100%;
-      height: auto;
     }
     
-    .plat2{
-      width:300px;
-      height:300px;
-      margin: 7px;
-    }
-    .plat2 img{
+    .plat1 img,.plat2 img{
       width:100%;
       height: auto;
     }

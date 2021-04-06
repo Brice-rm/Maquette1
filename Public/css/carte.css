@@ -3,9 +3,9 @@
 
 
 .menu{
-    margin-top: 150px;
-    height: 320px;
-    width: 100vw;
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,4 +26,13 @@
   }
   .carte img{
     width:100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width:1023px){
+
+
+
+
+
+
   }
