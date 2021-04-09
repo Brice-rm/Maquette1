@@ -15,45 +15,13 @@
 </head>
 
 <body>
+
+<!--NAV-->
+
     <div id="page">
-        <!-- <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent flex-d justify-content-end">
-                <button class="navbar-toggler hamburger justify-content-end" type="button" data-toggle="collapse"
-                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span>
-                        <i class="fas fa-bars" style="color: #ce5959; font-size:25px;"></i>
-                    </span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav text-right">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="carte.html">Carte</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><button type="button"
-                                    class="btn btn-red btn-sm">Réserver</button></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <header>
-            <div class="ban d-flex justify-content-center align-items-center">
-                <img src="Public/img/banniere5.jpg" alt="Bannière" class="img-ban">
-                <div class="rond d-flex justify-content-center align-items-center">
-                    <img src="Public/img/logo.png" alt="logo" class="logo">
-                </div>
-            </div>
-        </header> -->
         <div class="back-nav">
             <img src="Public/img/banniere5.jpg" alt="ban" class="ban">
-            <nav class="navbar navbar-expand-lg navbar-light bg-transparent flex-d justify-content-end"
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent d-flex justify-content-end"
                 style="background-color: transparent;">
                 <button class="navbar-toggler hamburger justify-content-end" type="button" data-toggle="collapse"
                     data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -62,10 +30,10 @@
                         <i class="fas fa-bars" style="color: #ce5959; font-size:25px;"></i>
                     </span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav text-right">
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav justify-content-end">
                         <li class="nav-item active">
-                            <a class="nav-link nav-large nav-mod nav-border text" href="index.html">Accueil</a>
+                            <a class="nav-link nav-large nav-mod nav-border" href="index.html">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-large nav-mod nav-border" href="carte.html">Carte</a>
@@ -86,27 +54,48 @@
             </div>
         </div>
 
-        <section class="menu">
-            <div class="container">
-                <div class="carte">
-                    <h1 class="text-center">MENU</h1>
+        
+<!--MENU-->
 
-                    <h4>Brunch</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, sed quas! Necessitatibus
-                            voluptas veniam sit qui quaerat, a ipsam, ex saepe aspernatur minima dignissimos voluptates
-                            odit suscipit quo laudantium nesciunt.</p>
-                        <img src="Public/img/brunch.jpg" alt="brunch">
-                </div>
+        <section>
+            <div class="container d-flex justify-content-center mb-5">
+                <h1 class="title">MENU</h1>
             </div>
-        </section>
+            <ul>
+              <li class="filter-list active" data-filter="all"> All </li>
+              <li class="filter-list" data-filter="mobile"> Ingredient 1</li>
+              <li class="filter-list" data-filter="camera"> Ingredient 2</li>
+              <li class="filter-list" data-filter="watch"> Ingredient 3</li>
+              <li class="filter-list" data-filter="shoes"> Ingredient 4 </li>
+              <li class="filter-list" data-filter="headphone"> Ingredient 5 </li>
+            </ul>
+            
+            <div class="product">
+              <div class="itembox mobile"> <img src="https://i.ibb.co/WxWWV8Q/mobile5.jpg"> </div>
+              <div class="itembox camera"> <img src="https://i.ibb.co/jTcF8w5/camera3.jpg"> </div>
+              <div class="itembox watch"> <img src="https://i.ibb.co/Nsx5T1y/watch2.jpg"> </div>
+              <div class="itembox headphone"> <img src="https://i.ibb.co/PjZPCdx/headphone4.jpg"> </div>
+              <div class="itembox shoes"> <img src="https://i.ibb.co/gjJsMDZ/shoe1.jpg"> </div>
+              <div class="itembox mobile"> <img src="https://i.ibb.co/WxWWV8Q/mobile5.jpg"> </div>
+              <div class="itembox camera"> <img src="https://i.ibb.co/jTcF8w5/camera3.jpg"> </div>
+              <div class="itembox watch"> <img src="https://i.ibb.co/Nsx5T1y/watch2.jpg"> </div>
+              <div class="itembox headphone"> <img src="https://i.ibb.co/PjZPCdx/headphone4.jpg"> </div>
+              <div class="itembox mobile"> <img src="https://i.ibb.co/WxWWV8Q/mobile5.jpg"> </div>
+              <div class="itembox camera"> <img src="https://i.ibb.co/jTcF8w5/camera3.jpg"> </div>
+              <div class="itembox watch"> <img src="https://i.ibb.co/Nsx5T1y/watch2.jpg"> </div>
+              <div class="itembox headphone"> <img src="https://i.ibb.co/PjZPCdx/headphone4.jpg"> </div>
+              <div class="itembox shoes"> <img src="https://i.ibb.co/gjJsMDZ/shoe1.jpg"> </div>
+              <div class="itembox mobile"> <img src="https://i.ibb.co/WxWWV8Q/mobile5.jpg"> </div>
+              <div class="itembox camera"> <img src="https://i.ibb.co/jTcF8w5/camera3.jpg"> </div>
+              <div class="itembox watch"> <img src="https://i.ibb.co/Nsx5T1y/watch2.jpg"> </div>
+              <div class="itembox headphone"> <img src="https://i.ibb.co/PjZPCdx/headphone4.jpg"> </div>
+              <div class="itembox shoes"> <img src="https://i.ibb.co/gjJsMDZ/shoe1.jpg"> </div>
+            </div>
+          </section>
+</div>
 
-
-
-
-
-
-
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+        <script src="./Public/js/menu.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>

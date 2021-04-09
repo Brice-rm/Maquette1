@@ -2,30 +2,10 @@
 /* //////////////Page Carte ////////////// */
 
 
-.menu{
-    margin-top: 50px;
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .cart-title{
-    height:50px;
-    width:100%;
-    background-color: #EFA282;
-    position: absolute;
-  }
-  .carte h1{
+  .title{
     font-family: "Tw Cen MT";
     color: #CE5959;
     margin-bottom: 50px;
-  }
-  .carte h4{
-    color: #EFA282;
-  }
-  .carte img{
-    width:100%;
   }
 
   @media screen and (min-width: 768px) and (max-width:1023px){
@@ -35,4 +15,71 @@
 
 
 
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,900&display=swap");
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  section {
+    max-width: 1170px;
+    padding: 20px;
+    margin: 40px auto;
+  }
+
+
+  /* // List + effect // */
+  ul {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #EFA282;
+    transition: all 0.4s fade-in;
+    cursor: pointer;
+    padding: 3px;
+  }
+  .filter-list::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    border-bottom: #EFA282 2px solid;
+    transition: width .5s;
+  }
+  .filter-list:hover::after{
+    width: 100%;
+    transition: width 450ms ease-out;
+  }
+  ul li.active:after{ 
+    width: 100%;
+  }
+
+
+
+
+
+  .product {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+  }
+  .itembox {
+    max-width: 23%;
+    height: auto;
+    margin: 5px;
+  }
+  .itembox img {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }

@@ -7,29 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./Public/css/style.css">
     <link rel="stylesheet" href="./Public/css/contact.css">
     <title>Document</title>
 </head>
 
-<body>
+<!--NAV-->
+
+<body >
     <div class="back-nav">
         <img src="Public/img/banniere5.jpg" alt="ban" class="ban">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent flex-d justify-content-end"
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent d-flex justify-content-end"
             style="background-color: transparent;">
             <button class="navbar-toggler hamburger justify-content-end" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span>
                     <i class="fas fa-bars" style="color: #ce5959; font-size:25px;"></i>
                 </span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav text-right">
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav justify-content-end">
                     <li class="nav-item active">
-                        <a class="nav-link nav-large nav-mod nav-border text" href="index.html">Accueil</a>
+                        <a class="nav-link nav-large nav-mod nav-border" href="index.html">Accueil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link nav-large nav-mod nav-border" href="carte.html">Carte</a>
@@ -50,9 +51,18 @@
         </div>
     </div>
 
+<!--ENV-->
 
-    <div class="container mt-5 mb-5">
+    <div class="img-contact">
+        <img src="Public/img/basilic.png" alt="basilic" class="bas2">
+        <img src="Public/img/dessert@2x.png" alt="dessert" class="dess">
+        <img src="Public/img/basilic.png" alt="basilic" class="bas1">
+    </div>
 
+<!--FORMULAIRE-->
+
+    <div class="container mb-5 mt-5 contact">
+        
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                 <h2 class="form-title">Contact</h2>
@@ -100,6 +110,42 @@
         </div><!-- End row -->
 
     </div><!-- End container -->
+
+
+<!--FOOTER-->
+
+    <footer>
+        <div class="container">
+            <div class="col-md-12 d-flex flex-row align-item-center">
+                <div class="col-4">
+                    <ul>
+                        <li>A propos</li>
+                        <li>Contact</li>
+                        <li>Termes et conditions</li>
+                    </ul>
+                </div>
+                <div class="col-4 d-flex align-items-center">
+                    <ul>
+                        <i class="fab fa-facebook-f "></i>
+                            <i class="fab fa-twitter "></i>
+                            <i class="fab fa-instagram "></i>                   
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul>
+                        <li>17 rue blabla, 75013 Paris</li>
+                        <li>06 00 00 00 00</li>
+                        <li>adobexd@mail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

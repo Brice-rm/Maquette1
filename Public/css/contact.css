@@ -9,6 +9,11 @@
   .margin-top-25 {
     margin-top: 25px;
   }
+
+  .contact{
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   .form-title {
     padding: 25px;
@@ -40,7 +45,115 @@
   textarea {
     resize: none;
   }
+  @media screen and (min-width:768px) and (max-width:1023px){
+    .contact{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media screen and (min-width:1024px){
+    .contact{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  /* //IMG// */
+
+  .img-contact{
+    width: 100%!important;
+    height: 800px!important;
+    overflow: hidden!important;
+    position: absolute;
+  }
+
+.bas1{
   
+  width:140px;
+  height:145px;
+  transform: rotate(-224deg) scaleY(-1);
+  position: absolute;
+  z-index: 6;
+  right: -22px;
+  top: -61px;
+}
+
+.bas2{
+  width:140px;
+  height:145px;
+  transform: rotate(-43deg);
+  position: absolute;
+  z-index: 3;
+  left: -65px;
+  top: 600px;
+}
+.dess{
+  width:220px;
+  height: auto;
+  position: absolute;
+  z-index: 7;
+  top: 610px;
+  right: -100px;
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+
+  .img-contact{
+    width: 100%!important;
+  }
+
+  .bas1{
+    width:273px;
+    height:283px;
+    top: -145px;
+  }
+  .bas2{
+    
+    width:273px;
+    height:283px;
+    top: 511px;
+    left: -131px;
+
+  }
+  .dess{
+    width:400px;
+    height: auto;
+    top: 550px;
+    right: -165px;
+  }
+}
+@media screen and (min-width:1024px){
+
+  .img-contact{
+    width: 100%!important;
+  }
+
+  .bas1{
+    width:343px;
+    height:364px;
+    top: -196px;
+  right: -42px;
+  }
+  .bas2{
+    
+    width:343px;
+    height:364px;
+    top: 451px;
+    left: -159px;
+
+  }
+  .dess{
+    width:600px;
+    height: auto;
+    top: 450px;
+    right: -250px;
+
+  }
+}
+
+
+
+  /* // CONTACT BUTTON // */
+
+
   .btn-mod.btn-large {
       height: auto;
       padding: 13px 52px;
@@ -85,6 +198,11 @@
       outline: none;
   }
   
+
+
+/* // MEDIA // */
+
+
   @media only screen and (max-width: 500px) {
       .btn-mod.btn-large {
          padding: 6px 16px;
