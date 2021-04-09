@@ -1,3 +1,5 @@
+// FILTER LISTE //
+
 $(function () {
     $(".filter-list").click(function () {
       $(this).addClass("active").siblings().removeClass("active");
@@ -15,4 +17,6 @@ $(function () {
       }
     });
   });
+
+// ADD //
 

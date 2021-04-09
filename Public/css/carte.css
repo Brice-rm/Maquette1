@@ -39,7 +39,7 @@
     margin-bottom: 20px;
     text-align: center;
   }
-  ul li {
+  ul .filter-list{
     display: inline-block;
     margin-right: 20px;
     font-size: 20px;
@@ -71,15 +71,36 @@
   .product {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
   }
   .itembox {
+    aspect-ratio: 4/4;
+    min-width: 5%;
     max-width: 23%;
     height: auto;
-    margin: 5px;
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .itembox img {
     display: block;
     max-width: 100%;
     height: auto;
+  }
+
+
+
+
+
+
+  span.prix {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    display:block;
+  }
+  
+  .img-responsive {
+    margin-bottom: 10px;
   }
